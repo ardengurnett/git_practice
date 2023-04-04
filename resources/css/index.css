@@ -1,0 +1,176 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-dark: #050A30;
+    --primary-mid: #0000FF;
+    --primary-light: #7EC8E3;
+    --primary-white: #F2F2F2;
+}
+
+/*basic font and styling*/
+html {
+    text-align: center;
+    background-color: var(--primary-white);
+    color: var(--primary-dark);
+}
+
+p {
+    font-family: Raleway, sans-serif;
+    font-weight: 200;
+    max-width: 680px;
+    margin: auto;
+    padding: auto, 5px;
+}
+
+h4,
+h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+}
+
+h1.top {
+    font-family: Merriweather, serif;
+    font-weight: 400;
+}
+
+h1.bottom {
+    font-family: Arvo, serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: Arvo, serif;
+}
+
+
+.card__img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.testimonial {
+    font-style: italic;
+}
+
+
+/*basic sections*/
+.block {
+    padding: 5rem 0 5rem;
+}
+
+.block--light {
+    background-color: var(--primary-light);
+}
+
+.block--mid {
+    background-color: var(--primary-mid);
+    color: var(--primary-white);
+}
+
+.block--dark {
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
+}
+
+
+
+
+/*grid sections*/
+
+.grid-block {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(autofit, 200px);
+    justify-content: center;
+}
+
+.grid-block > * {
+    margin: 10px auto 0px;
+}
+
+.grid-block h4 {
+    margin-bottom: 10px;
+}
+
+.grid-block img {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .grid-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .grid-block img {
+        display: inline;
+    }
+
+}
+
+
+
+
+/*header styling*/
+.top:before,
+.top:after {
+    background-color: var(--primary-dark);
+    content: "";
+    display: inline-block;
+    height: 0.15rem;
+    position: relative;
+    vertical-align: middle;
+    width: 3rem;
+}
+
+button {
+    background-color: var(--primary-mid);
+    color: var(--primary-white);
+    border-radius: 1rem;
+    padding: .5rem;
+    border: none;
+    margin-top: 1.5rem;
+}
+
+a:link {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--primary-light);
+}
+
+
+/*footer styling*/
+ li {
+    display: inline;
+ }
+
+ li+li:before {
+    content: "| ";
+ }
+
+
+
+
+
+
+
+
+
